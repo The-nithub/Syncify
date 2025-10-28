@@ -10,7 +10,7 @@ const CreateSession = () => {
 
   const handleCreate = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/api/session/create", {
+      const res = await axios.post("https://syncify-1.onrender.com/api/session/create", {
         hostSocketId: socket.id,
       });
       const newSessionId = res.data.sessionId;
